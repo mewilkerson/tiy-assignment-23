@@ -1,10 +1,10 @@
 {
-  "name": "soundcloud-pre",
+  "name": "assignment-23",
   "version": "0.0.0",
   "authors": [
-    "JD Isaacks <jd@jisaacks.com>"
+    "Matt Wilkerson <mattisonwilkerson@gmail.com>"
   ],
-  "license": "MIT",
+  "license": "ISC",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -22,5 +22,8 @@
   "devDependencies": {
     "mocha": "~2.2.1",
     "chai": "~2.1.1"
-  }
+  },
+  "homepage": "https://github.com/mewilkerson/music-app",
+  "description": "SounCloud app",
+  "private": true
 }
