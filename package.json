@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/mewilkerson/music-app/issues"
   },
-  "homepage": "https://github.com/mewilkerson/music-app"
+  "homepage": "https://github.com/mewilkerson/music-app",
+  "dependencies": {
+    "gulp": "^3.8.11"
+  }
 }

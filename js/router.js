@@ -10,11 +10,23 @@ var Router = Backbone.Router.extend({
       collection: this.tracks
     });
 
-    $("body").append(this.tracksView.el);
+    $(".tracks").append(this.tracksView.el);
+
+    this.header = new HeaderView();
+    $(".nav").append(this.header.render().el);
+
+
+    this.sidebar = new SidebarView();
+    $(".sidebar").append(this.sidebar.render().el);
+    this.listenTo(this.sidebar, "genre:select", function(data){
+      this.loadGenre(data);
+      this.navigate("tracks/" + data);
+    });
   },
 
   loadGenre: function(genre) {
     this.tracks.loadGenre(genre);
-  }
+  },
+
 
 });

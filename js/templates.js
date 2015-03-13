@@ -1,4 +1,12 @@
 this["JST"] = this["JST"] || {};
+this["JST"]["header"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+    return "<header>\n  <div class=\"soundcloud\">\n    <h1>SoundCloud</h1>\n  </div>\n</header>";
+},"useData":true});
+this["JST"] = this["JST"] || {};
+this["JST"]["sidebar"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+    return "<h2>Choose a Genre</h2>\n\n<ul>\n  <li><button class=\"genre-button\" data-name=\"alternative\">Alternative</button></li>\n  <li><button class=\"genre-button\" data-name=\"ambient\">Ambient</button></li>\n  <li><button class=\"genre-button\" data-name=\"classical\">Classical</button></li>\n  <li><button class=\"genre-button\" data-name=\"country\">Country</button></li>\n  <li><button class=\"genre-button\" data-name=\"dance\">Dance/EDM</button></li>\n  <li><button class=\"genre-button\" data-name=\"dubstep\">Dubstep</button></li>\n  <li><button class=\"genre-button\" data-name=\"electronic\">Electronic</button></li>\n  <li><button class=\"genre-button\" data-name=\"folk\">Folk</button></li>\n  <li><button class=\"genre-button\" data-name=\"rap\">Hip Hop/Rap</button></li>\n  <li><button class=\"genre-button\" data-name=\"indie\">Indie</button></li>\n  <li><button class=\"genre-button\" data-name=\"metal\">Metal</button></li>\n  <li><button class=\"genre-button\" data-name=\"pop\">Pop</button></li>\n  <li><button class=\"genre-button\" data-name=\"soul\">R&amp;B/Soul</button></li>\n  <li><button class=\"genre-button\" data-name=\"audiobooks\">Audiobooks</button></li>\n</ul>\n\n\n\n\n\n";
+},"useData":true});
+this["JST"] = this["JST"] || {};
 this["JST"]["track"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
     return "  <i class=\"fa fa-play-circle\"></i>\n";
 },"3":function(depth0,helpers,partials,data) {

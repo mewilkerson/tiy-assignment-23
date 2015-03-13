@@ -133,3 +133,44 @@ var TrackCollectionView = Backbone.View.extend({
   }
 
 });
+
+var HeaderView = Backbone.View.extend({
+
+  template: JST["header"],
+
+  render: function() {
+    this.$el.html(this.template());
+    return this;
+  }
+
+});
+
+
+var SidebarView = Backbone.View.extend({
+
+  events: {
+    "click .genre-button" : "genreSelect"
+  },
+
+  tagName: "aside",
+
+  template: JST["sidebar"],
+
+  render: function() {
+    this.$el.html(this.template());
+    return this;
+  },
+
+  genreSelect: function(e) {
+    // e.preventDefault();
+
+    $genreBtn = $(e.currentTarget);
+     var gotGenre = $genreBtn.data( "name" );
+     console.log(gotGenre);
+     //genre:select is the event being triggered,
+     // and I'm passing gotGenre (from above) as a parameter
+     // into the event.
+     this.trigger("genre:select", gotGenre);
+
+    }
+  });
